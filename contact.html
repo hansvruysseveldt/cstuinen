@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — CSTuinen</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="CSTuinen">
+        <img src="assets/images/logo.png" alt="CSTuinen logo" />
+      </a>
+      <button class="nav-toggle" id="navToggle4" aria-expanded="false" aria-controls="mainNav4">
+        <span class="sr-only">Menu</span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="mainNav4" class="main-nav" role="navigation" aria-label="Hoofdmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Over ons</a></li>
+          <li><a href="gallery.html">Diensten & Galerie</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <p>Vul onderstaand formulier in en we contacteren u zo snel mogelijk.</p>
+
+    <!-- Netlify Forms: add data-netlify="true" and a hidden input name="form-name" value="contact" -->
+    <!-- If you prefer Formspree, change action to Formspree endpoint and method="POST" -->
+    <form id="contactForm" class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" name="contact">
+      <!-- Netlify required fields -->
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
+
+      <label for="name">Naam</label>
+      <input id="name" name="name" required type="text" placeholder="Uw naam" />
+
+      <label for="email">E-mail</label>
+      <input id="email" name="email" required type="email" placeholder="naam@voorbeeld.be" />
+
+      <label for="phone">Telefoon (optioneel)</label>
+      <input id="phone" name="phone" type="tel" placeholder="+32 ..." />
+
+      <label for="message">Bericht</label>
+      <textarea id="message" name="message" rows="6" required placeholder="Wat kunnen we voor u doen?"></textarea>
+
+      <button type="submit" class="btn btn-primary">Verstuur</button>
+    </form>
+
+    <section class="contact-info">
+      <h2>Andere manieren om contact op te nemen</h2>
+      <p>Telefoon: <a href="tel:+32000000000">+32 0 00 00 00 00</a><br />
+      E-mail: <a href="mailto:info@cstuinen.be">info@cstuinen.be</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>CSTuinen</h4>
+        <p>Professioneel tuinonderhoud & groenvoorziening</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>
+          <a href="tel:+32000000000">+32 0 00 00 00 00</a><br />
+          <a href="mailto:info@cstuinen.be">info@cstuinen.be</a>
+        </address>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <small>&copy; <span id="year4"></span> CSTuinen</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
