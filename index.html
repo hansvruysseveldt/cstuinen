@@ -3,80 +3,90 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CSTuinen — Tuinonderhoud & groenvoorziening</title>
+  <title>CSTuinen — Tuinaanleg & grondwerken</title>
   <meta name="description" content="CSTuinen — Professioneel tuinonderhoud, groenonderhoud en tuinontwerp. Werkzaam in uw regio voor particulier en bedrijf." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="CSTuinen">
-        <!-- Replace with real logo: assets/images/logo.svg -->
-        <img src="assets/images/logo.png" alt="CSTuinen logo" />
-      </a>
+      <div class="container header-inner">
+          <a class="logo" href="index.html" aria-label="CSTuinen">
+              <!-- Replace with real logo: assets/images/logo.svg -->
+              <img src="assets/images/logo.png" alt="CSTuinen logo" />
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
+              <span class="sr-only">Menu</span>
+              <span class="hamburger"></span>
+          </button>
 
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
-        <span class="sr-only">Menu</span>
-        <span class="hamburger"></span>
-      </button>
-
-      <nav id="mainNav" class="main-nav" role="navigation" aria-label="Hoofdmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">Over ons</a></li>
-          <li><a href="gallery.html">Diensten & Galerie</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+          <nav id="mainNav" class="main-nav" role="navigation" aria-label="Hoofdmenu">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <!--li><a href="about.html">Over ons</a></li-->
+                  <!--li><a href="gallery.html">Diensten & Galerie</a></li-->
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container hero-inner">
-        <h1>Professioneel tuinonderhoud & groenvoorziening</h1>
-        <p class="lead">Jaren ervaring met aanleg, onderhoud en duurzame beplanting. Lokale service — duidelijke prijzen.</p>
+        <h1>CSTuinen</h1>
+        <p class="lead">U kan bij ons terecht voor: tuinwerken, grondwerken, bestratingswerken, aanleg (zwem)vijvers, terrassen, omheiningen ...</p>
         <p class="cta-row">
           <a class="btn btn-primary" href="contact.html">Vraag een offerte</a>
-          <a class="btn btn-secondary" href="gallery.html">Bekijk projecten</a>
+          <a class="btn btn-secondary" href="https://m.facebook.com/Cstuinen-734895269868524/" target="_blank">Bekijk projecten</a>
         </p>
       </div>
     </section>
 
     <section class="services container">
-      <h2>Onze diensten</h2>
-      <div class="grid grid-3">
-        <article class="card">
-          <img src="assets/images/service-maintenance.jpg" alt="Tuinonderhoud" />
-          <h3>Tuinonderhoud</h3>
-          <p>Regelmatig onderhoud: maaien, snoeien, onkruidbestrijding en netheid. Flexibele onderhoudspakketten.</p>
-        </article>
-
-        <article class="card">
-          <img src="assets/images/service-design.jpg" alt="Tuinontwerp" />
-          <h3>Tuinontwerp & aanleg</h3>
-          <p>Op maat gemaakte tuinontwerpen en professionele aanleg, van beplanting tot bestrating en verlichting.</p>
-        </article>
-
-        <article class="card">
-          <img src="assets/images/service-planting.jpg" alt="Beplanting" />
-          <h3>Beplanting & renovatie</h3>
-          <p>Duurzame en onderhoudsvriendelijke beplantingsplannen, aangepast aan bodem en microklimaat.</p>
-        </article>
-      </div>
+        <h2>Onze diensten</h2>
+        <div class="grid grid-3">
+            <article class="card">
+                <img src="assets/images/service-maintenance.jpg" alt="tuinaanleg" />
+                <h3>Tuinaanleg</h3>
+            </article>
+            <article class="card">
+                <img src="assets/images/grondwerken.jpg" alt="grondwerken" />
+                <h3>Grondwerken</h3>
+            </article>
+            <article class="card">
+                <img src="assets/images/Bestrating.jpg" alt="bestrating" />
+                <h3>Bestratingswerken</h3>
+            </article>
+        </div>
+        <div class="grid grid-3">
+            <article class="card">
+                <img src="assets/images/service-planting.jpg" alt="zwemvijver" />
+                <h3>(Zwem)vijvers</h3>
+            </article>
+            <article class="card">
+                <img src="assets/images/service-design.jpg" alt="terrassen" />
+                <h3>Terrassen</h3>
+            </article>
+            <article class="card">
+                <img src="assets/images/poort.jpg" alt="omheiningen" />
+                <h3>Omheiningen</h3>
+            </article>
+        </div>
     </section>
 
     <section class="about-blurb container">
       <div class="grid grid-2 align-center">
         <div>
-          <h2>Lokale vakmensen</h2>
-          <p>Wij werken met ervaren hoveniers en leveren duurzaam resultaat. We begeleiden projecten van voorstel tot oplevering.</p>
+          <h2>Tuinwerken</h2>
           <ul class="features">
-            <li>Transparante offertes</li>
-            <li>Duurzame materialen</li>
-            <li>Veilig en verzekerd werk</li>
+              <li>Algemene tuinwerken</li>
+              <li>Tuinaanleg, met of zonder tuinarchitect</li>
+              <li>Beplanting</li>
+              <li>Aanleg gazon</li>
+              <li>Plaatsen tuinhuizen</li>
+              <li>Plaatsen steenkorven</li>
           </ul>
-          <p><a class="btn" href="about.html">Lees meer over ons</a></p>
+          <p><a class="btn" href="https://m.facebook.com/Cstuinen-734895269868524/" target="_blank">Lees meer over ons</a></p>
         </div>
         <div>
           <img src="assets/images/team-placeholder.jpg" alt="Ons team" class="rounded" />
@@ -103,16 +113,15 @@
       <div class="footer-col">
         <h4>Contact</h4>
         <address>
-          <a href="tel:+32000000000">+32 0 00 00 00 00</a><br />
-          <a href="mailto:info@cstuinen.be">info@cstuinen.be</a>
+          <a href="tel:+320478421133">0478/42.11.33</a><br />
+          <a href="mailto:cstuinen@gmail.com"> cstuinen@gmail.com</a>
         </address>
       </div>
 
       <div class="footer-col">
         <h4>Links</h4>
         <ul>
-          <li><a href="about.html">Over ons</a></li>
-          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="https://m.facebook.com/Cstuinen-734895269868524" target="_blank">Facebook</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -120,7 +129,7 @@
 
     <div class="copyright">
       <div class="container">
-        <small>&copy; <span id="year"></span> CSTuinen — Alle rechten voorbehouden.</small>
+          <small>&copy; <span id="year"></span> CSTuinen - Oppemstraat 70, 1861 Wolvertem — BTW BE 0534.497.813 — Alle rechten voorbehouden.</small>
       </div>
     </div>
   </footer>
